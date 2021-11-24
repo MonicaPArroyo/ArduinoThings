@@ -9,7 +9,7 @@ void setup() {
  
 void loop() {
   float temperatura; //Variable para almacenar la temperatura
-  temperatura = medirTemperatura; //Se invoca a la función que mide la temperatura;
+  temperatura = medirTemperatura(); //Se invoca a la función que mide la temperatura;
  
   Serial.println(temperatura); //Imprime el dato en el Monitor Serie
  
@@ -18,6 +18,6 @@ void loop() {
 
 float medirTemperatura(){
   int lectura = analogRead(A0); //Se lee el dato digital en el pin A0
-  float temp = (5.0 * tempC * 100.0)/1024.0; //Se calcula la temperatura con la fórmula
+  float temp = (5.0 * lectura * 100.0)/1024.0; //Se calcula la temperatura con la fórmula
   return temp;
 }
