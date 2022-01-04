@@ -1,6 +1,6 @@
 /*
  * Programa creado por: Mónica P. Arroyo
- * Social media: @monicaparroyo
+ * Redes sociales: @monicaparroyo
  */
  
 void setup() {
