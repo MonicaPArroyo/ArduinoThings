@@ -15,6 +15,6 @@ void loop() {
   int grados = 0; // Declaramos la variable para los grados
   int tiempo = 100; // Declaramos la variable para el tiempo
   
-  servoMotor.write(0);// Desplazamos a la posición que contiene la variable grados
-  delay(1000);// Esperamos el tiempo que contiene la variable tiempo
+  servoMotor.write(grados);// Desplazamos a la posición que contiene la variable grados
+  delay(tiempo);// Esperamos el tiempo que contiene la variable tiempo
 }
